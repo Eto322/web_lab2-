@@ -1,0 +1,234 @@
+html,
+body {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .btn {
+    background-color: rgb(143, 143, 236);
+    border-color: rgb(112, 112, 243);
+  }
+  .form-check-input:checked {
+    background: rgb(143, 143, 236);
+  }
+  .header {
+    nav {
+      .container-fluid {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .btn {
+        background: rgb(143, 143, 236);
+        border-color: rgb(112, 112, 243);
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        &:hover {
+          background: rgb(112, 112, 243);
+          color: white;
+        }
+      }
+      .autoriz-nav::after {
+        content: "\ea13";
+        font-family: "icomoon";
+      }
+    }
+  }
+  .main {
+    &__wrapper {
+      margin-left: 10%;
+      margin-right: 10%;
+      background-color: #212529e3;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 0 15px rgb(0, 0, 0 / 50%);
+    }
+    &__inner {
+      padding: 20px;
+      color: white;
+      border-left: solid 5px rgb(143, 143, 236);
+      border-right: solid 5px rgb(143, 143, 236);
+      .title {
+        text-align: center;
+        color: rgb(143, 143, 236);
+      }
+      .divider {
+        height: 1px;
+        width: 50%;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+      .main-app {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        table {
+          border-style: double;
+          border: 3px rgb(112, 112, 243) double;
+        }
+        tr {
+          td {
+            border: 3px rgb(112, 112, 243) double;
+            padding: 5px;
+            text-align: center;
+          }
+        }
+        .item:hover {
+          background-color: #474f57e3;
+        }
+        th {
+          width: 250px;
+          border: 3px rgb(112, 112, 243) double;
+          text-align: center;
+        }
+      }
+      form {
+        margin-left: 30%;
+        margin-right: 30%;
+
+        .btn {
+          background: rgb(143, 143, 236);
+          border-color: rgb(112, 112, 243);
+          color: white;
+          margin-left: 5px;
+          margin-right: 5px;
+          &:hover {
+            background: rgb(112, 112, 243);
+            color: white;
+          }
+        }
+        .form-control {
+          font-size: 15px;
+          padding: 3px;
+        }
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  .main-profile {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #212529e3;
+      background-clip: border-box;
+      border: 0 solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      color: white;
+    }
+    .card-body {
+      flex: 1 1 400px;
+      min-height: 1px;
+      padding: 1rem;
+    }
+  }
+  .footer {
+    box-shadow: 0 0 15px rgb(0, 0, 0 / 50%);
+    color: white;
+    background-color: #212529;
+    margin-top: auto;
+    &-textline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px;
+      padding-left: 10%;
+      padding-right: 10%;
+      // border-bottom: solid 2px white;
+      // border-top: solid 2px white;
+    }
+    &-text {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    &-date {
+      text-align: center;
+    }
+  }
+}
+
+.carousel-inner {
+  img {
+    height: 100vh;
+    width: 100vh;
+  }
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 750px) {
+  .main__inner {
+    form {
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+    }
+  }
+}
+@media (max-width: 450px) {
+  th {
+    width: 150px;
+    font-size: 15px;
+  }
+  td {
+    font-size: 15px;
+  }
+}
+@media (max-width: 350px) {
+  th {
+    width: 110px !important;
+    font-size: 14px;
+  }
+  td {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 510px) {
+  .page {
+    .footer-textline {
+      .footer-text {
+        font-size: 17px;
+      }
+
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  .page {
+    .header {
+      nav {
+        .container-fluid {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+html,
+body {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
+  font-size: 20px; }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .page .btn {
+    background-color: #8f8fec;
+    border-color: #7070f3; }
+  .page .form-check-input:checked {
+    background: #8f8fec; }
+  .page .header nav .container-fluid {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .page .header nav .btn {
+    background: #8f8fec;
+    border-color: #7070f3;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px; }
+    .page .header nav .btn:hover {
+      background: #7070f3;
+      color: white; }
+  .page .header nav .autoriz-nav::after {
+    content: "\ea13";
+    font-family: "icomoon"; }
+  .page .main__wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #212529e3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 15px black; }
+  .page .main__inner {
+    padding: 20px;
+    color: white;
+    border-left: solid 5px #8f8fec;
+    border-right: solid 5px #8f8fec; }
+    .page .main__inner .title {
+      text-align: center;
+      color: #8f8fec; }
+    .page .main__inner .divider {
+      height: 1px;
+      width: 50%;
+      background-color: white;
+      margin: 0 auto;
+      margin-top: 25px;
+      margin-bottom: 30px; }
+    .page .main__inner .main-app {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .page .main__inner .main-app table {
+        border-style: double;
+        border: 3px #7070f3 double; }
+      .page .main__inner .main-app tr td {
+        border: 3px #7070f3 double;
+        padding: 5px;
+        text-align: center; }
+      .page .main__inner .main-app .item:hover {
+        background-color: #474f57e3; }
+      .page .main__inner .main-app th {
+        width: 250px;
+        border: 3px #7070f3 double;
+        text-align: center; }
+    .page .main__inner form {
+      margin-left: 30%;
+      margin-right: 30%; }
+      .page .main__inner form .btn {
+        background: #8f8fec;
+        border-color: #7070f3;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px; }
+        .page .main__inner form .btn:hover {
+          background: #7070f3;
+          color: white; }
+      .page .main__inner form .form-control {
+        font-size: 15px;
+        padding: 3px; }
+      .page .main__inner form .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px; }
+  .page .main-profile {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px; }
+    .page .main-profile .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #212529e3;
+      background-clip: border-box;
+      border: 0 solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      color: white; }
+    .page .main-profile .card-body {
+      flex: 1 1 400px;
+      min-height: 1px;
+      padding: 1rem; }
+  .page .footer {
+    box-shadow: 0 0 15px black;
+    color: white;
+    background-color: #212529;
+    margin-top: auto; }
+    .page .footer-textline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px;
+      padding-left: 10%;
+      padding-right: 10%; }
+    .page .footer-text {
+      padding-right: 5px;
+      padding-left: 5px; }
+    .page .footer-date {
+      text-align: center; }
+
+.carousel-inner img {
+  height: 100vh;
+  width: 100vh; }
+
+@media (max-width: 750px) {
+  .main__inner form {
+    margin-left: 10% !important;
+    margin-right: 10% !important; } }
+
+@media (max-width: 450px) {
+  th {
+    width: 150px;
+    font-size: 15px; }
+  td {
+    font-size: 15px; } }
+
+@media (max-width: 350px) {
+  th {
+    width: 110px !important;
+    font-size: 14px; }
+  td {
+    font-size: 14px; }
+  .text {
+    font-size: 15px; } }
+
+@media (max-width: 510px) {
+  .page .footer-textline {
+    padding-left: 10%;
+    padding-right: 10%; }
+    .page .footer-textline .footer-text {
+      font-size: 17px; }
+  .page .header nav .container-fluid {
+    margin-left: 5%;
+    margin-right: 5%; } }
